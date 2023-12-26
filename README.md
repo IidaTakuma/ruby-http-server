@@ -7,7 +7,7 @@
 ```ruby
 require_relative 'src/server'
 
-# Requestクラスのインスタンスを引数に
+# HttpRequestクラス(./src/http_request.rbに定義)のインスタンスを引数に
 # [status_code, header, body]の配列を返すblockを処理の本体に渡す
 server = Server.new(port: 12345) do |request|
 
